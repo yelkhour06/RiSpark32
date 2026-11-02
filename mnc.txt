@@ -1,0 +1,7 @@
+000 ?orange?FETCH
+001 ?red?DECODE
+010 ?blue?EXECUTE
+011 ?black?WAIT_EX
+100 ?pink?DECODE2
+101 ?violet?EXECUTE2
+110 ?black?WAIT_EX2
