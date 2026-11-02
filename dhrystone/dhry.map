@@ -1,0 +1,117 @@
+
+There are no discarded input sections
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+//mem            0x00000000         0x00030000
+mem              0x00000000         0x00004400
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+
+.memory         0x00000000     0x3928
+                0x00000000                        . = 0x0
+ *(.text)
+ .text          0x00000000       0x90 /tmp/cciL4KMJ.o
+                0x00000000                _start
+ .text          0x00000090        0x0 /tmp/ccvDb7S3.o
+ .text          0x00000090      0x21c /tmp/ccSbEMwq.o
+                0x00000090                Proc_1
+                0x00000208                Proc_2
+                0x00000238                Proc_3
+                0x00000264                Proc_4
+                0x00000294                Proc_5
+ .text          0x000002ac      0x148 /tmp/ccLBjpot.o
+                0x000002ac                Proc_6
+                0x00000300                Proc_7
+                0x00000310                Proc_8
+                0x00000378                Func_1
+                0x0000039c                Func_2
+                0x000003e8                Func_3
+ .text          0x000003f4      0x3d0 /tmp/ccKZrSy1.o
+                0x000003f4                time
+                0x000003fc                insn
+                0x00000404                malloc
+                0x00000430                printf
+                0x00000578                memcpy
+                0x0000061c                strcpy
+                0x000006cc                strcmp
+ *(.rodata .rodata.*)
+ .rodata.str1.4
+                0x000007c4      0x512 /tmp/ccSbEMwq.o
+                                0x50e (size before relaxing)
+ *(.sdata .sdata.*)
+ *(.data .data.*)
+ .data          0x00000cd6        0x0 /tmp/cciL4KMJ.o
+ .data          0x00000cd6        0x0 /tmp/ccvDb7S3.o
+ .data          0x00000cd6        0x0 /tmp/ccSbEMwq.o
+ .data          0x00000cd6        0x0 /tmp/ccLBjpot.o
+ .data          0x00000cd6        0x0 /tmp/ccKZrSy1.o
+ *(.sbss .sbss.*)
+ *fill*         0x00000cd6        0x2 
+ .sbss          0x00000cd8       0x38 /tmp/ccSbEMwq.o
+                0x00000cd8                Dhrystones_Per_Second
+                0x00000cdc                Microseconds
+                0x00000ce0                User_Insn
+                0x00000ce4                End_Insn
+                0x00000ce8                Begin_Insn
+                0x00000cec                User_Time
+                0x00000cf0                End_Time
+                0x00000cf4                Begin_Time
+                0x00000cf8                Reg
+                0x00000cfc                Ch_2_Glob
+                0x00000cfd                Ch_1_Glob
+                0x00000d00                Bool_Glob
+                0x00000d04                Int_Glob
+                0x00000d08                Next_Ptr_Glob
+                0x00000d0c                Ptr_Glob
+ .sbss          0x00000d10        0x4 /tmp/ccKZrSy1.o
+                0x00000d10                heap_memory_used
+ *(.bss .bss.*)
+ .bss           0x00000d14        0x0 /tmp/cciL4KMJ.o
+ .bss           0x00000d14        0x0 /tmp/ccvDb7S3.o
+ .bss           0x00000d14     0x27d8 /tmp/ccSbEMwq.o
+                0x00000d14                Arr_1_Glob
+                0x00000ddc                Arr_2_Glob
+ .bss           0x000034ec        0x0 /tmp/ccLBjpot.o
+ .bss           0x000034ec      0x400 /tmp/ccKZrSy1.o
+                0x000034ec                heap_memory
+                0x00020000                        //. = ALIGN (0x20000)
+                0x00003900                        . = ALIGN (0x100)
+ *fill*         0x000038ec       0x14 
+ irq*(.text)
+ *(.irq_vector)
+ .irq_vector    0x00003900       0x28 /tmp/ccvDb7S3.o
+                0x00003900                _irq_vector_start
+                0x00003928                        end = .
+LOAD /tmp/cciL4KMJ.o
+LOAD /tmp/ccvDb7S3.o
+LOAD /tmp/ccSbEMwq.o
+LOAD /tmp/ccLBjpot.o
+LOAD /tmp/ccKZrSy1.o
+OUTPUT(../firmware/test.elf elf32-littleriscv)
+
+.text.startup   0x00003928      0x67c
+ .text.startup  0x00003928      0x67c /tmp/ccSbEMwq.o
+                0x00003928                main
+
+.riscv.attributes
+                0x00000000       0x2e
+ .riscv.attributes
+                0x00000000       0x28 /tmp/cciL4KMJ.o
+ .riscv.attributes
+                0x00000028       0x2c /tmp/ccvDb7S3.o
+ .riscv.attributes
+                0x00000054       0x2a /tmp/ccSbEMwq.o
+ .riscv.attributes
+                0x0000007e       0x2a /tmp/ccLBjpot.o
+ .riscv.attributes
+                0x000000a8       0x2a /tmp/ccKZrSy1.o
+
+.comment        0x00000000       0x22
+ .comment       0x00000000       0x22 /tmp/ccSbEMwq.o
+                                 0x23 (size before relaxing)
+ .comment       0x00000022       0x23 /tmp/ccLBjpot.o
+ .comment       0x00000022       0x23 /tmp/ccKZrSy1.o

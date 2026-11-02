@@ -1,0 +1,4 @@
+Archive member included to satisfy reference by file (symbol)
+
+/usr/lib/gcc/riscv64-unknown-elf/13.2.0/libgcc.a(div.o)
+                              core_list_join.o (__udivsi3)
