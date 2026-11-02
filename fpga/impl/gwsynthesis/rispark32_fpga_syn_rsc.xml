@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="system" Register="1" Lut="25" Bsram="32" T_Register="881(1)" T_Alu="393(0)" T_Lut="2839(25)" T_MULT36X36="1(0)" T_Bsram="32(32)" T_Ssram="32(0)">
+ <SubModule name="u_Reset_Sync" Register="4" Alu="4" Lut="2" T_Register="4(4)" T_Alu="4(4)" T_Lut="2(2)"/>
+ <SubModule name="rispark32_core" Register="166" Alu="62" Lut="277" T_Register="830(166)" T_Alu="358(62)" T_Lut="2770(277)" T_MULT36X36="1(0)" T_Ssram="32(0)">
+  <SubModule name="ALUsync_i" Register="34" Alu="127" Lut="555" T_Register="34(34)" T_Alu="127(127)" T_Lut="555(555)"/>
+  <SubModule name="ram_cpuregs" Lut="2" Ssram="32" T_Lut="2(2)" T_Ssram="32(32)"/>
+  <SubModule name="riscv_mul_i" Register="67" Lut="190" MULT36X36="1" T_Register="67(67)" T_Lut="190(190)" T_MULT36X36="1(1)"/>
+  <SubModule name="riscv_div_rem_i" Register="225" Alu="64" Lut="404" T_Register="225(225)" T_Alu="64(64)" T_Lut="404(404)"/>
+  <SubModule name="cpu_decode_inst" Register="231" Alu="105" Lut="318" T_Register="231(231)" T_Alu="105(105)" T_Lut="318(318)"/>
+  <SubModule name="cpu_exec_inst" Register="107" Lut="1024" T_Register="107(107)" T_Lut="1024(1024)"/>
+ </SubModule>
+ <SubModule name="simpleuart_inst" Register="46" Alu="31" Lut="42" T_Register="46(46)" T_Alu="31(31)" T_Lut="42(42)"/>
+</Module>

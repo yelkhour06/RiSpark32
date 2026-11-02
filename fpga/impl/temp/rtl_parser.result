@@ -1,0 +1,94 @@
+[
+ {
+  "InstFile" : "C:/TMP/rispark32_fpga/rispark32_fpga/src/top.v",
+  "InstLine" : 23,
+  "InstName" : "system",
+  "ModuleFile" : "C:/TMP/rispark32_fpga/rispark32_fpga/src/top.v",
+  "ModuleLine" : 23,
+  "ModuleName" : "system",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/TMP/rispark32_fpga/rispark32_fpga/src/top.v",
+    "InstLine" : 61,
+    "InstName" : "u_Reset_Sync",
+    "ModuleFile" : "C:/TMP/rispark32_fpga/rispark32_fpga/src/top.v",
+    "ModuleLine" : 3,
+    "ModuleName" : "Reset_Sync"
+   },
+   {
+    "InstFile" : "C:/TMP/rispark32_fpga/rispark32_fpga/src/top.v",
+    "InstLine" : 73,
+    "InstName" : "rispark32_core",
+    "ModuleFile" : "C:/TMP/rispark32_fpga/rispark32_fpga/src/rispark32.v",
+    "ModuleLine" : 37,
+    "ModuleName" : "rispark32",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/TMP/rispark32_fpga/rispark32_fpga/src/rispark32.v",
+      "InstLine" : 110,
+      "InstName" : "ALUsync_i",
+      "ModuleFile" : "C:/TMP/rispark32_fpga/rispark32_fpga/src/rispark32.v",
+      "ModuleLine" : 2029,
+      "ModuleName" : "ALUsync"
+     },
+     {
+      "InstFile" : "C:/TMP/rispark32_fpga/rispark32_fpga/src/rispark32.v",
+      "InstLine" : 298,
+      "InstName" : "u_instruction_decoder",
+      "ModuleFile" : "C:/TMP/rispark32_fpga/rispark32_fpga/src/rispark32.v",
+      "ModuleLine" : 1013,
+      "ModuleName" : "instruction_decoder"
+     },
+     {
+      "InstFile" : "C:/TMP/rispark32_fpga/rispark32_fpga/src/rispark32.v",
+      "InstLine" : 450,
+      "InstName" : "ram_cpuregs",
+      "ModuleFile" : "C:/TMP/rispark32_fpga/rispark32_fpga/src/rispark32.v",
+      "ModuleLine" : 2081,
+      "ModuleName" : "rispark32_reg"
+     },
+     {
+      "InstFile" : "C:/TMP/rispark32_fpga/rispark32_fpga/src/rispark32.v",
+      "InstLine" : 498,
+      "InstName" : "riscv_mul_i",
+      "ModuleFile" : "C:/TMP/rispark32_fpga/rispark32_fpga/src/rispark32.v",
+      "ModuleLine" : 1842,
+      "ModuleName" : "riscv_mul"
+     },
+     {
+      "InstFile" : "C:/TMP/rispark32_fpga/rispark32_fpga/src/rispark32.v",
+      "InstLine" : 510,
+      "InstName" : "riscv_div_rem_i",
+      "ModuleFile" : "C:/TMP/rispark32_fpga/rispark32_fpga/src/rispark32.v",
+      "ModuleLine" : 1957,
+      "ModuleName" : "riscv_div_rem"
+     },
+     {
+      "InstFile" : "C:/TMP/rispark32_fpga/rispark32_fpga/src/rispark32.v",
+      "InstLine" : 531,
+      "InstName" : "cpu_decode_inst",
+      "ModuleFile" : "C:/TMP/rispark32_fpga/rispark32_fpga/src/rispark32.v",
+      "ModuleLine" : 1223,
+      "ModuleName" : "cpu_decode"
+     },
+     {
+      "InstFile" : "C:/TMP/rispark32_fpga/rispark32_fpga/src/rispark32.v",
+      "InstLine" : 603,
+      "InstName" : "cpu_exec_inst",
+      "ModuleFile" : "C:/TMP/rispark32_fpga/rispark32_fpga/src/rispark32.v",
+      "ModuleLine" : 1497,
+      "ModuleName" : "cpu_exec"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/TMP/rispark32_fpga/rispark32_fpga/src/top.v",
+    "InstLine" : 89,
+    "InstName" : "simpleuart_inst",
+    "ModuleFile" : "C:/TMP/rispark32_fpga/rispark32_fpga/src/simpleuart.v",
+    "ModuleLine" : 20,
+    "ModuleName" : "simpleuart"
+   }
+  ]
+ }
+]

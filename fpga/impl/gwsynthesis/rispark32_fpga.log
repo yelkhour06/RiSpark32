@@ -1,0 +1,102 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'C:\TMP\rispark32_fpga\rispark32_fpga\src\rispark32.v'
+Undeclared symbol 'mem_valid', assumed default net type 'wire'("C:\TMP\rispark32_fpga\rispark32_fpga\src\rispark32.v":671)
+Analyzing Verilog file 'C:\TMP\rispark32_fpga\rispark32_fpga\src\simpleuart.v'
+Analyzing Verilog file 'C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v'
+WARN  (EX3073) : Port 'ser_rx' remains unconnected for this instance("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":96)
+Compiling module 'system'("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":23)
+Extracting RAM for identifier 'memory'("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":98)
+WARN  (EX2412) : Illegal entry at C:/TMP/rispark32_fpga/rispark32_fpga/src/firmware.hex:16385 for index 16384 in range [0:16383]("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":99)
+Compiling module 'Reset_Sync'("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":3)
+WARN  (EX3073) : Port 'alu_valid' remains unconnected for this instance("C:\TMP\rispark32_fpga\rispark32_fpga\src\rispark32.v":688)
+Compiling module 'rispark32(reset_vector=0,irq_vector='h1_0000)'("C:\TMP\rispark32_fpga\rispark32_fpga\src\rispark32.v":37)
+Extracting RAM for identifier 'reg_name'("C:\TMP\rispark32_fpga\rispark32_fpga\src\rispark32.v":79)
+Extracting RAM for identifier 'abi_name'("C:\TMP\rispark32_fpga\rispark32_fpga\src\rispark32.v":79)
+Compiling module 'ALUsync(p_alu_add=4'b0000,p_alu_sub=4'b1000,p_alu_sll=4'b0001,p_alu_slt=4'b0010,p_alu_sltu=4'b0011,p_alu_xor=4'b0100,p_alu_srl=4'b0101,p_alu_sra=4'b1101,p_alu__or=4'b0110,p_alu_and=4'b0111,p_alussub=4'b1111)'("C:\TMP\rispark32_fpga\rispark32_fpga\src\rispark32.v":2029)
+Compiling module 'instruction_decoder'("C:\TMP\rispark32_fpga\rispark32_fpga\src\rispark32.v":1013)
+WARN  (EX3791) : Expression size 13 truncated to fit in target size 12("C:\TMP\rispark32_fpga\rispark32_fpga\src\rispark32.v":1203)
+Compiling module 'rispark32_reg'("C:\TMP\rispark32_fpga\rispark32_fpga\src\rispark32.v":2081)
+Extracting RAM for identifier 'regs'("C:\TMP\rispark32_fpga\rispark32_fpga\src\rispark32.v":2166)
+Compiling module 'riscv_mul'("C:\TMP\rispark32_fpga\rispark32_fpga\src\rispark32.v":1842)
+Compiling module 'riscv_div_rem'("C:\TMP\rispark32_fpga\rispark32_fpga\src\rispark32.v":1957)
+WARN  (EX3791) : Expression size 31 truncated to fit in target size 1("C:\TMP\rispark32_fpga\rispark32_fpga\src\rispark32.v":1978)
+WARN  (EX3791) : Expression size 63 truncated to fit in target size 32("C:\TMP\rispark32_fpga\rispark32_fpga\src\rispark32.v":2009)
+Compiling module 'cpu_decode(cpu_state_decod=3'b001,cpu_state_decod2=3'b100,p_alu_add=4'b0000,p_alu_sub=4'b1000,p_alussub=4'b1111,csr_base_address=32'b00000001000000000000010000000000)'("C:\TMP\rispark32_fpga\rispark32_fpga\src\rispark32.v":1223)
+Compiling module 'cpu_exec(cpu_state_fetch=3'b000,cpu_state_exec=3'b010,cpu_state_exec2=3'b101,reset_vector=32'b00000000000000000000000000000000,irq_vector=32'b00000000000000010000000000000000)'("C:\TMP\rispark32_fpga\rispark32_fpga\src\rispark32.v":1497)
+WARN  (EX1998) : Net 'new_rs1[63]' does not have a driver("C:\TMP\rispark32_fpga\rispark32_fpga\src\rispark32.v":79)
+WARN  (EX1998) : Net 'new_rs2[63]' does not have a driver("C:\TMP\rispark32_fpga\rispark32_fpga\src\rispark32.v":79)
+WARN  (EX1998) : Net 'new_rd[63]' does not have a driver("C:\TMP\rispark32_fpga\rispark32_fpga\src\rispark32.v":79)
+WARN  (EX1998) : Net 'mem_valid' does not have a driver("C:\TMP\rispark32_fpga\rispark32_fpga\src\rispark32.v":671)
+Compiling module 'simpleuart(DEFAULT_DIV=234)'("C:\TMP\rispark32_fpga\rispark32_fpga\src\simpleuart.v":20)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("C:\TMP\rispark32_fpga\rispark32_fpga\src\simpleuart.v":99)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 4("C:\TMP\rispark32_fpga\rispark32_fpga\src\simpleuart.v":132)
+WARN  (EX3826) : Synthesis - simulation differences may occur when using parallel_case directive("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":108)
+WARN  (EX2565) : Input 'ser_rx' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":96)
+WARN  (EX2565) : Input 'reg_div_we[3]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":96)
+WARN  (EX2565) : Input 'reg_div_we[2]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":96)
+WARN  (EX2565) : Input 'reg_div_we[1]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":96)
+WARN  (EX2565) : Input 'reg_div_we[0]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":96)
+WARN  (EX2565) : Input 'reg_div_di[31]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":96)
+WARN  (EX2565) : Input 'reg_div_di[30]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":96)
+WARN  (EX2565) : Input 'reg_div_di[29]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":96)
+WARN  (EX2565) : Input 'reg_div_di[28]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":96)
+WARN  (EX2565) : Input 'reg_div_di[27]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":96)
+WARN  (EX2565) : Input 'reg_div_di[26]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":96)
+WARN  (EX2565) : Input 'reg_div_di[25]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":96)
+WARN  (EX2565) : Input 'reg_div_di[24]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":96)
+WARN  (EX2565) : Input 'reg_div_di[23]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":96)
+WARN  (EX2565) : Input 'reg_div_di[22]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":96)
+WARN  (EX2565) : Input 'reg_div_di[21]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":96)
+WARN  (EX2565) : Input 'reg_div_di[20]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":96)
+WARN  (EX2565) : Input 'reg_div_di[19]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":96)
+WARN  (EX2565) : Input 'reg_div_di[18]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":96)
+WARN  (EX2565) : Input 'reg_div_di[17]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":96)
+WARN  (EX2565) : Input 'reg_div_di[16]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":96)
+WARN  (EX2565) : Input 'reg_div_di[15]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":96)
+WARN  (EX2565) : Input 'reg_div_di[14]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":96)
+WARN  (EX2565) : Input 'reg_div_di[13]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":96)
+WARN  (EX2565) : Input 'reg_div_di[12]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":96)
+WARN  (EX2565) : Input 'reg_div_di[11]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":96)
+WARN  (EX2565) : Input 'reg_div_di[10]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":96)
+WARN  (EX2565) : Input 'reg_div_di[9]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":96)
+WARN  (EX2565) : Input 'reg_div_di[8]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":96)
+WARN  (EX2565) : Input 'reg_div_di[7]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":96)
+WARN  (EX2565) : Input 'reg_div_di[6]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":96)
+WARN  (EX2565) : Input 'reg_div_di[5]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":96)
+WARN  (EX2565) : Input 'reg_div_di[4]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":96)
+WARN  (EX2565) : Input 'reg_div_di[3]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":96)
+WARN  (EX2565) : Input 'reg_div_di[2]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":96)
+WARN  (EX2565) : Input 'reg_div_di[1]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":96)
+WARN  (EX2565) : Input 'reg_div_di[0]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":96)
+WARN  (EX2565) : Input 'reg_dat_re' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\TMP\rispark32_fpga\rispark32_fpga\src\top.v":96)
+NOTE  (EX0101) : Current top module is "system"
+WARN  (EX0211) : The output port "instr_csrrw" of module "instruction_decoder" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\TMP\rispark32_fpga\rispark32_fpga\src\rispark32.v":1089)
+WARN  (EX0211) : The output port "instr_csrrs" of module "instruction_decoder" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\TMP\rispark32_fpga\rispark32_fpga\src\rispark32.v":1090)
+WARN  (EX0211) : The output port "instr_csrrc" of module "instruction_decoder" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\TMP\rispark32_fpga\rispark32_fpga\src\rispark32.v":1091)
+WARN  (EX0211) : The output port "instr_csrrwi" of module "instruction_decoder" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\TMP\rispark32_fpga\rispark32_fpga\src\rispark32.v":1092)
+WARN  (EX0211) : The output port "instr_csrrsi" of module "instruction_decoder" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\TMP\rispark32_fpga\rispark32_fpga\src\rispark32.v":1093)
+WARN  (EX0211) : The output port "instr_csrrci" of module "instruction_decoder" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\TMP\rispark32_fpga\rispark32_fpga\src\rispark32.v":1094)
+WARN  (EX0211) : The output port "alu_valid" of module "cpu_exec(cpu_state_fetch=3'b000,cpu_state_exec=3'b010,cpu_state_exec2=3'b101,reset_vector=32'b00000000000000000000000000000000,irq_vector=32'b00000000000000010000000000000000)" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\TMP\rispark32_fpga\rispark32_fpga\src\rispark32.v":1588)
+WARN  (EX0211) : The output port "start_mul" of module "cpu_exec(cpu_state_fetch=3'b000,cpu_state_exec=3'b010,cpu_state_exec2=3'b101,reset_vector=32'b00000000000000000000000000000000,irq_vector=32'b00000000000000010000000000000000)" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\TMP\rispark32_fpga\rispark32_fpga\src\rispark32.v":1589)
+WARN  (EX0211) : The output port "start_div" of module "cpu_exec(cpu_state_fetch=3'b000,cpu_state_exec=3'b010,cpu_state_exec2=3'b101,reset_vector=32'b00000000000000000000000000000000,irq_vector=32'b00000000000000010000000000000000)" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\TMP\rispark32_fpga\rispark32_fpga\src\rispark32.v":1590)
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+WARN  (NL0002) : The module "instruction_decoder" instantiated to "u_instruction_decoder" is swept in optimizing("C:\TMP\rispark32_fpga\rispark32_fpga\src\rispark32.v":389)
+[95%] Generate netlist file "C:\TMP\rispark32_fpga\rispark32_fpga\impl\gwsynthesis\rispark32_fpga.vg" completed
+[100%] Generate report file "C:\TMP\rispark32_fpga\rispark32_fpga\impl\gwsynthesis\rispark32_fpga_syn.rpt.html" completed
+GowinSynthesis finish
