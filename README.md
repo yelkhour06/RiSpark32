@@ -1,4 +1,6 @@
 # RiSpark32: A Top-Tier Tiny Open-Source RISC-V SoC
+RTL core design, testbench, benchmarking and synthesis are done without LLM models.
+AI/LLM model helped to develop the Snake game
 
 
 |                 |                                      |
