@@ -83,6 +83,7 @@ Normalized to Cortex-M0 (= 1.0):
 ```
 
 > By **DMIPS/gate efficiency**, RiSpark32 is about **1.40×** Cortex-M0 (≈ **40% better**).
+> This is indicative comparison only: technology/configuration differ
 
 ## Lab Results
 
