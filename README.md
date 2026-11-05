@@ -120,8 +120,11 @@ Likely to be enhanced with an HDMI display instead of a terminal.
 ## Getting started on ubuntu
 
 You can install riscv64-unknown-elf-gcc in ubuntu using apt : sudo apt install gcc-riscv64-unknown-elf
+
 make TESTALL=1 test # Run instructions test
+
 make MAIN=1 test    # Snake game is set as main, will start in console
+
 
 ## Future Work
 
