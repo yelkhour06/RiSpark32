@@ -91,16 +91,16 @@ test_fpga: testbench_fpga.vvp fpga/fw/test_word.hex
 test_vcd: testbench_vcd.vvp firmware/test.hex
 	$(VVP) -N $< +vcd +trace +noerror
 
-testbench.vvp: testbench.v apb_periph.v $(CELLS) rispark32.v
+testbench.vvp: testbench.v apb_periph.v rispark32.v
 	$(IVERILOG) -g2012 -o $@ $^
 	chmod -x $@
 
-testbench_fpga.vvp: fpga/src_sim/top.v fpga/src_sim/simpleuart.v $(CELLS) rispark32.v
+testbench_fpga.vvp: fpga/src_sim/top.v fpga/src_sim/simpleuart.v rispark32.v
 	$(IVERILOG) -D WAVEFORM=1 -g2012 -o $@ $^
 	chmod -x $@
 
 
-testbench_vcd.vvp: testbench.v apb_periph.v $(CELLS) rispark32.v
+testbench_vcd.vvp: testbench.v apb_periph.v rispark32.v
 	$(IVERILOG) -D WAVEFORM=1 -g2012 -o $@ $^
 	chmod -x $@
 
